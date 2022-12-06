@@ -2,7 +2,7 @@ import '../index.css'
 import { Link, useNavigate, useParams} from "react-router-dom";
 import React,{useState, useEffect} from 'react';
 import axios from 'axios';
-import Municipios from './Municipios';
+import Municipios from './municipios';
 
 const registrarOrden = () =>{
 

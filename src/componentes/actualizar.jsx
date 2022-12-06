@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useNavigate, useParams } from "react-router-dom";
 import {useEffect, useState } from 'react';
 import axios from 'axios';
-import Municipios from './Municipios';
+import Municipios from './municipios';
 
 const actualizar = () =>{
 
