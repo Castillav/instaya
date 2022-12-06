@@ -58,7 +58,7 @@ const registrarOrden = () =>{
    
     }else{
   
-    axios.post("http://localhost:5000/api/agregarorden", orden)
+    axios.post("https://instaya-lovat.vercel.app/api/agregarorden", orden)
     .then((response) => {
       setOrdenes(response.data);
       alert('Registrado Exitosamente');

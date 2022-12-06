@@ -15,7 +15,7 @@ useEffect(()=>{
   async function obtenerLista() {
     
     try {
-      const response = await axios.get(`http://localhost:5000/api/listado/${id}`);
+      const response = await axios.get(`https://instaya-lovat.vercel.app/api/listado/${id}`);
       console.log("Response: " + response.data.usuario);
      
     } catch (error) {
@@ -41,7 +41,7 @@ const  enviarDatos = async (evento)=>{
 
   async function actualizarDatos() {
     try {
-      await axios.put(`http://localhost:5000/api/actualizarclave/${id}`, clave) 
+      await axios.put(`https://instaya-lovat.vercel.app/api/actualizarclave/${id}`, clave) 
       alert('Contraseña Nueva Generada Exitosamente')
       navigate('/');
     } catch (error) {

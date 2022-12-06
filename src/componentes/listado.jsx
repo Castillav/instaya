@@ -18,7 +18,7 @@ const listado = () =>{
     async function obtenerLista() {
       
       try {
-        const response = await axios.get(`http://localhost:5000/api/lista/${usuario}`);
+        const response = await axios.get(`https://instaya-lovat.vercel.app/api/lista/${usuario}`);
         setLista(response.data);
        
        

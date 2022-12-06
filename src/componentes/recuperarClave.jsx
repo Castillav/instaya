@@ -30,7 +30,7 @@ const enviarDatos = async (evento)=>{
     }else{
 
 
-  axios.post("http://localhost:5000/api/recuperar", login)
+  axios.post("https://instaya-lovat.vercel.app/api/recuperar", login)
   .then((data) => {
     console.log(data, "usuario encontrado");
     if (data.data.status== "ok") {

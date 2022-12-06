@@ -29,7 +29,7 @@ const estado = () =>{
 		function () {
 			async function obtenerdatosId() {
 				try {
-					const response = await axios.get(`http://localhost:5000/api/obtenerdatos/${id}`);
+					const response = await axios.get(`https://instaya-lovat.vercel.app/api/obtenerdatos/${id}`);
 					setDatos(response.data);
           console.log("DATOS ACT:" + response.data.estado);
 				} catch (error) {
@@ -98,7 +98,7 @@ const estado = () =>{
 
     async function actualizarDatos() {
 			try {
-				await axios.put(`http://localhost:5000/api/actualizar/${id}/${usuario}`, dato) 
+				await axios.put(`https://instaya-lovat.vercel.app/api/actualizar/${id}/${usuario}`, dato) 
         alert('Datos Actualizados Correctamente')
 			} catch (error) {
 				console.log(error);

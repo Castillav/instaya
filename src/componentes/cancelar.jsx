@@ -30,7 +30,7 @@ const cancelar = () =>{
 		function () {
 			async function obtenerdatosId() {
 				try {
-					const response = await axios.get(`http://localhost:5000/api/obtenerdatos/${id}`);
+					const response = await axios.get(`https://instaya-lovat.vercel.app/api/obtenerdatos/${id}`);
 					setDatos(response.data);
           console.log(response.data);
 				} catch (error) {
@@ -62,7 +62,7 @@ const cancelar = () =>{
 
     async function actualizarDatos() {
 			try {
-				await axios.put(`http://localhost:5000/api/actualizar/${id}/${usuario}`, {estado:'Cancelado'}) 
+				await axios.put(`https://instaya-lovat.vercel.app/api/actualizar/${id}/${usuario}`, {estado:'Cancelado'}) 
         alert('La recogida fue cancelada');
         navigate(`/listado/${usuario}`);
 			} catch (error) {

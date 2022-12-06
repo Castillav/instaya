@@ -19,7 +19,7 @@ const enviarDatos = async (evento)=>{
   evento.preventDefault();
 
     
-  axios.post("http://localhost:5000/api/agregar", usuario)
+  axios.post("https://instaya-lovat.vercel.app/api/agregar", usuario)
   .then((response) => {
     setUsuario(response.data);
   });

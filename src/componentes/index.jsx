@@ -29,7 +29,7 @@ const enviarDatos = async (evento)=>{
 
  }else{
 
-  axios.post("http://localhost:5000/api/login", login)
+  axios.post("https://instaya-lovat.vercel.app/api/login", login)
   .then((data) => {
     console.log(data, "userRegister");
     if (data.data.status== "ok") {
